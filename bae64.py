@@ -10,7 +10,7 @@ def tobae64(s):
     binary = tobin(s)
     pad = (6 - (len(binary) % 6)) % 6
     binary += "0" * pad
-    pad = pad // 2
+    pad //= 2
 
     bae64 = ""
     for i in range(0, len(binary), 6):
